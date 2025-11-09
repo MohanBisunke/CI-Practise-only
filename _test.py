@@ -12,6 +12,9 @@ def cube(n):
 def fifth_power(n):
     return n ** 5
 
+def tenth_power(n):
+    return n ** 10
+
 # Testing the square function
 def test_square():
     assert square(2) == 4, "Test Failed: Square of 2 should be 4"
@@ -26,6 +29,11 @@ def test_cube():
 def test_fifth_power():
     assert fifth_power(2) == 32, "Test Failed: Fifth power of 2 should be 32"
     assert fifth_power(3) == 243, "Test Failed: Fifth power of 3 should be 243"
+    
+def test_tenth():
+    assert tenth_power(1) == 1, "Test Failed: Tenth power of 1 should be 1"
+    assert tenth_power(-1) == 1, "Test Failed: Tenth power of -1 should be 1"
+    assert tenth_power(2) == 1024 , "Test failed, Tenth power of 2 should be 1024"
 
 # Test for invalid input
 def test_invalid_input():
